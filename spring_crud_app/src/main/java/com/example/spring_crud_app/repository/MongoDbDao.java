@@ -15,7 +15,7 @@ public class MongoDbDao {
 		// System.setProperty("jdk.tls.trustNameService", "true");
 
 		MongoClientURI uri = new MongoClientURI(
-				"mongodb+srv://sourabhhardeniya:Sourabh%401@cluster0.7sjud4i.mongodb.net/?retryWrites=true&w=majority&connectTimeoutMS=30000");
+				"mongodb+srv://sourabhhardeniya:Sourabh%401@cluster0.7sjud4i.mongodb.net/test?retryWrites=true&w=majority&connectTimeoutMS=30000");
 
 		try (MongoClient mongoClient = new MongoClient(uri)) {
 			MongoDatabase database = mongoClient.getDatabase("test");

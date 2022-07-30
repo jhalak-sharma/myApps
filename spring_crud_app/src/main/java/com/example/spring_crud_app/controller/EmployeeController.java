@@ -33,6 +33,7 @@ public class EmployeeController {
 //    Get Employee by name
     @GetMapping("/getEmployeeByName/{name}")
     public Employee getEmployeeByName(@PathVariable String name){
+    	System.out.println("name is "+name);
         return employeeService.getEmployeeByName(name);
     }
     @PostMapping("/updateEmployee")
